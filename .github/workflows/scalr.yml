@@ -40,4 +40,7 @@ jobs:
           pwd
           env
           ls -al
+          python --version
+          python3 --version
+          ps -p $$
           
