@@ -24,8 +24,9 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
+      - uses: buzzy/scalr-terraform-cli
 
       # Runs a single command using the runners shell
-      - name: Install Scalr Terraform CLI
-        run: bash terraform.bash
+      - name: Done
+        run: echo "Done!"
          
