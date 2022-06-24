@@ -24,7 +24,7 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
-      - uses: buzzy/scalr-terraform-cli
+      - uses: buzzy/scalr-terraform-cli@v1
         with:
           terraform_hostname: 'taco.daniele.se'
           terraform_token: 'aaaa'
