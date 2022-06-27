@@ -28,7 +28,7 @@ jobs:
         with:
           terraform_hostname: 'taco.daniele.se'
           terraform_token: 'aaaa'
-          terraform_version: '3.4'
+          terraform_version: '0.14'
 
       # Runs a single command using the runners shell
       - name: Done
