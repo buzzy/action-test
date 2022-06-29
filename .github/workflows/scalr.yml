@@ -30,6 +30,9 @@ jobs:
           scalr_environment: 'xxx'
           scalr_workspace: 'yyy'
 
+      - run: which terraform
+      - run: whereis terraform
+      
       - id: init
         run: terraform init
 
