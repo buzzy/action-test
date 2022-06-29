@@ -30,6 +30,9 @@ jobs:
           scalr_environment: 'xxx'
           scalr_workspace: 'yyy'
 
+      - name: Remove terraform
+        run: rm -f /usr/local/bin/terraform
+
       - name: Whereis
         run: whereis terraform
 
