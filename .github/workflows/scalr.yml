@@ -24,13 +24,14 @@ jobs:
       - uses: actions/checkout@v3
       - uses: buzzy/scalr-terraform-cli@v1
         with:
-          terraform_hostname: 'daniele.scalr.io'
-          terraform_token: ${{ secrets.TERRAFORM_TOKEN }}
           terraform_version: '1.2.2'
+          scalr_token: ${{ secrets.TERRAFORM_TOKEN }}
+          scalr_hostname: 'daniele.scalr.io'
+          scalr_environment: 'xxx'
+          scalr_workspace: 'yyy'
 
-      # Runs a single command using the runners shell
-      - name: Test Terraform
-        run: |
-          terraform init
-          terraform plan
-         
+      - id: init
+        run: terraform init
+
+      - name: Print output
+        run: echo ${{ steps.init.outputs.stdout }}
