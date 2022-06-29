@@ -39,6 +39,9 @@ jobs:
       - name: Version
         run: terraform -v
 
+      - name: CLI Path
+        run: ls -al $TERRAFORM_CLI_PATH
+      
       - id: init
         run: terraform init
 
