@@ -36,6 +36,9 @@ jobs:
       - name: Whereis
         run: whereis terraform
 
+      - name: Permission
+        run: chmod +x "$TERRAFORM_CLI_PATH/terraform"
+
       - name: Version
         run: terraform -v
 
