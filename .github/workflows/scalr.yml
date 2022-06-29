@@ -24,7 +24,7 @@ jobs:
       - uses: actions/checkout@v3
       - uses: buzzy/scalr-terraform-cli@v1
         with:
-          terraform_version: '1.2.0'
+          terraform_version: '1.2.1'
           scalr_token: ${{ secrets.TERRAFORM_TOKEN }}
           scalr_hostname: 'daniele.scalr.io'
           scalr_environment: 'env-tq8cgtfobaj07u8'
