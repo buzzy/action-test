@@ -29,6 +29,7 @@ jobs:
           scalr_hostname: 'daniele.scalr.io'
           scalr_environment: 'xxx'
           scalr_workspace: 'yyy'
+          terraform_wrapper: false
 
       - name: Whereis
         run: whereis terraform
