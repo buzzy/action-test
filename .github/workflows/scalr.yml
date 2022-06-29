@@ -27,8 +27,6 @@ jobs:
           terraform_version: '1.2.1'
           scalr_token: ${{ secrets.TERRAFORM_TOKEN }}
           scalr_hostname: 'daniele.scalr.io'
-          scalr_environment: 'env-tq8cgtfobaj07u8'
-          scalr_workspace: 'cli'
 
       - name: Whereis
         run: whereis terraform
