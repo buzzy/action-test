@@ -22,13 +22,19 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
-      - uses: buzzy/scalr-terraform-cli@v1
+      - uses: buzzy/scalr-action@v1.5.0
         with:
           terraform_version: '1.2.1'
           scalr_token: ${{ secrets.TERRAFORM_TOKEN }}
           scalr_hostname: 'daniele.scalr.io'
 
-      - name: Whereis
+      - name: Whereis scalr
+        run: whereis scalr
+
+      - name: Scalr-cli version
+        run: scalr --version
+
+      - name: Whereis terraform
         run: whereis terraform
 
       - name: CLI Path
