@@ -34,10 +34,8 @@ jobs:
       - name: Scalr-cli version
         run: scalr --version
 
-      - run: env
-
       - name: Test run
-        run: scalr --verbose list-environments
+        run: scalr -verbose -workspace-id=ws-u9dkgp1jsirnfn0
 
       - name: Whereis terraform
         run: whereis terraform
