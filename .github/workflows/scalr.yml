@@ -36,6 +36,7 @@ jobs:
 
       - name: Test run
         run: scalr -verbose create-run -workspace-id=ws-u9dkgp1jsirnfn0
+        shell: bash
 
       - name: Whereis terraform
         run: whereis terraform
