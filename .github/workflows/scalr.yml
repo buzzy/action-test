@@ -37,10 +37,7 @@ jobs:
       - run: env
 
       - name: Test run
-        env:
-          SCALR_TOKEN: ${{ secrets.TERRAFORM_TOKEN }}
-          SCALR_HOSTNAME: 'daniele.scalr.io'
-        run: scalr --verbose create-run
+        run: scalr --verbose list-environments
 
       - name: Whereis terraform
         run: whereis terraform
